@@ -20,4 +20,5 @@ jobs:
       - run: ls
       - run: git status
       - run: git add stingray-2021-11-18.mkdocs
+      - run: git status
       - run: git push
