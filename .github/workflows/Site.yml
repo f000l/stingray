@@ -21,5 +21,7 @@ jobs:
       - run: git status
       - run: git add stingray-2021-11-18.mkdocs
       - run: git status
+      - run: git config --global user.email "andrglad@gmail.com.com"
+      - run: git config --global user.name "Andrey Gladilin"
       - run: git commit -m "Automatic deploy"
       - run: git push
