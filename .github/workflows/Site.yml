@@ -18,4 +18,8 @@ jobs:
       - run: docker-compose build #
       - run: docker-compose run --rm foliant make site
       - run: ls
-      - run: git push https://github.com/andrglad/stingray.git 
+      - run: git push https://github.com/andrglad/stingray.git
+      - uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
