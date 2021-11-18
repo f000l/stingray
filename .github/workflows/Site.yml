@@ -12,6 +12,5 @@ jobs:
       - uses: actions/setup-python@v2
         with:
           python-version: 3.x
-      - run: pip install mkdocs-material #
-      - run: pip install foliantcontrib.mkdocs #
-      - run: foliant make site -p my-project #
+      - run: pip3 install foliant foliantcontrib.init #
+      - run: foliant make site #
