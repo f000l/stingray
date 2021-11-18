@@ -14,7 +14,7 @@ jobs:
           python-version: 3.x
           
       - run: ls
-          
-#      - run: docker pull foliant/foliant #
-#      - run: docker-compose build #
-#      - run: docker-compose run --rm foliant make site
+      - run: docker pull foliant/foliant #
+      - run: docker-compose build #
+      - run: docker-compose run --rm foliant make site
+      - run: ls
