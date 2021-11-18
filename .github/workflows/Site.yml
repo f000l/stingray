@@ -13,11 +13,12 @@ jobs:
         with:
           python-version: 3.x
           
-      - run: apt update #
-      - run: apt install software-properties-common #
-      - run: add-apt-repository ppa:deadsnakes/ppa #
-      - run: apt install python3.9 python3-pip #
+      - run: sudo apt update #
+      - run: sudo apt install software-properties-common #
+      - run: sudo add-apt-repository ppa:deadsnakes/ppa #
+      - run: sudo apt install python3.9 python3-pip #
       - run: docker pull foliant/foliant #
       - run: pip install mkdocs-material #
       - run: pip install foliant foliantcontrib.init #
+      - run: docker-compose run --rm foliant make site #
       - run: foliant make site
