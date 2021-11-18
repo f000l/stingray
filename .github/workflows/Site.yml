@@ -21,4 +21,5 @@ jobs:
       - run: git status
       - run: git add stingray-2021-11-18.mkdocs
       - run: git status
+      - run: git commin -m "Automatic deploy"
       - run: git push
