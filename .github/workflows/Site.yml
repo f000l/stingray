@@ -14,4 +14,4 @@ jobs:
           python-version: 3.x
       - run: pip install mkdocs-material #
       - run: pip install foliantcontrib.mkdocs #
-      - run: foliant make mkdocs -p my-project #
+      - run: foliant make site -p my-project #
