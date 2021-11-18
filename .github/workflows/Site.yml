@@ -19,4 +19,5 @@ jobs:
       - run: docker-compose run --rm foliant make site
       - run: ls
       - run: git status
+      - run: git add stingray-2021-11-18.mkdocs
       - run: git push
