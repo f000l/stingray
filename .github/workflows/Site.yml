@@ -1,10 +1,13 @@
 name: Publish Package
 
 on:
-  push:
-    branches: # 
-      - master
-      - main
+  workflow_run:
+    workflows:
+      - "Deploy Docs"
+    tags:
+      - '*'
+    types: 
+      - completed
 
 jobs:
   Publish:
@@ -25,4 +28,7 @@ jobs:
         run: poetry install
 
       - name: Publish Package
-        run: poetry publish --build
+        env:
+          PYPI_USERNAME: ${{ secrets.PYPI_USERNAME }}
+          PYPI_PASSWORD: ${{ secrets.PYPI_PASSWORD }}
+        run: poetry publish --build --username="$PYPI_USERNAME" --password="$PYPI_PASSWORD"
