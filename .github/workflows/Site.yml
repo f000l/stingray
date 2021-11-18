@@ -13,4 +13,4 @@ jobs:
         with:
           python-version: 3.x
       - run: pip3 install foliant foliantcontrib.init #
-      - run: foliant make site #
+      - run: foliant make site
