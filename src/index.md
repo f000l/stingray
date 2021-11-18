@@ -1,3 +1,3 @@
-# Welcome to stingray
+# Добро пожаловать в Stingray
 
-Your content goes here.
+Строчка на русском языке.
