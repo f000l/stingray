@@ -24,4 +24,4 @@ jobs:
       - run: git config --global user.email "andrglad@gmail.com.com"
       - run: git config --global user.name "Andrey Gladilin"
       - run: git commit -m "Automatic deploy"
-      - run: git push origin master:ghp
+      - run: git push
