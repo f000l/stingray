@@ -19,7 +19,7 @@ jobs:
       - run: docker-compose run --rm foliant make site
       - run: ls
       - run: git status
-      - run: git add stingray-2021-11-18.mkdocs
+      - run: git add stingray-2021-11-20.mkdocs
       - run: git status
       - run: git config --global user.email "andrglad@gmail.com.com"
       - run: git config --global user.name "Andrey Gladilin"
